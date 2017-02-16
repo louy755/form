@@ -1,0 +1,191 @@
+<nav class="w3-sidenav w3-light-grey w3-card-2" style="width:130px">
+  <div class="w3-container">
+  
+  </div>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'main')">main</a>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'labs')">labs</a>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'documents')">documents</a>
+    <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'order')">order</a>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'radiolagy')">radiolagy</a>
+
+</nav>
+
+<div style="margin-left:130px">
+  <div class="w3-padding">Vertical Tab Example (sidenav)</div>
+
+ <div id="main" class="w3-container city" style="display:none">
+<table border="3">
+
+
+   <table>
+<tr>
+<td><h1>main</h1></td>
+<td>
+
+   <h1>
+Viewer:
+   </h1>
+
+
+<body>
+<textarea rows="10" cols="80">
+</textarea>
+<h1>
+text entry:
+</h1>
+<textarea rows="10" cols="80">
+</textarea>
+
+</body>
+</html>
+    </table>
+  </div>
+  <div id="labs" class="w3-container city" style="display:none">
+      
+      
+      <table border="3">
+
+
+   <table>
+<tr>
+<td><h1>labs</h1></td>
+<td>
+
+   <h1>
+Viewer:
+   </h1>
+
+
+<body>
+<textarea rows="10" cols="80">
+</textarea>
+<h1>
+text entry:
+</h1>
+<textarea rows="10" cols="80">
+</textarea>
+
+</body>
+</html>
+    </table>
+
+     
+  </div>
+  <div id="documents" class="w3-container city" style="display:none">
+          
+    
+    
+    <table border="3">
+
+
+   <table>
+<tr>
+<td><h1>documents</h1></td>
+<td>
+
+   <h1>
+Viewer:
+   </h1>
+
+
+<body>
+<textarea rows="10" cols="80">
+</textarea>
+<h1>
+text entry:
+</h1>
+<textarea rows="10" cols="80">
+</textarea>
+
+</body>
+</html>
+
+   </table>
+
+   
+  </div>
+  <div id="order" class="w3-container city" style="display:none">
+
+
+
+
+<table border="3">
+
+
+   <table>
+<tr>
+<td><h1>order</h1></td>
+<td>
+
+   <h1>
+Viewer:
+   </h1>
+
+
+<body>
+<textarea rows="10" cols="80">
+</textarea>
+<h1>
+text entry:
+</h1>
+<textarea rows="10" cols="80">
+</textarea>
+
+</body>
+</html>
+
+   </table>
+
+
+ </div>
+  <div id="radiolagy" class="w3-container city" style="display:none">
+<table border="3">
+
+
+   <table>
+<tr>
+<td><h1>radiolagy</h1></td>
+<td>
+
+   <h1>
+Viewer:
+   </h1>
+
+
+<body>
+<textarea rows="10" cols="80">
+</textarea>
+<h1>
+text entry:
+</h1>
+<textarea rows="10" cols="80">
+</textarea>
+
+</body>
+</html>
+
+   </table>
+  </div>
+
+
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html>

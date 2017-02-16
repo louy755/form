@@ -1,0 +1,329 @@
+<%= form_for(patient, class: 'form-inline', style: 'display:inline') do |f| %>
+  <% if patient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+
+      <ul>
+      <% patient.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+
+<center>
+    <div class="floating-box1">
+      <br>
+
+  <button class="button">New Patient <br> Visit</button>
+  <button class="button">Load <br>Patient</button>
+  <button class="button">Admit <br>Admit</button>
+  <button class="button">Descharge <br> Discharge</button>
+  <button class="button">Remove <br> Patient</button>
+<br><br>
+
+  <hr class="to">
+  <div class="floating-box10">
+    
+     <div class="floating-boxf">
+    <div class="field">
+    <%= f.label :gender %>:
+    <%= f.text_field :gender, :size=>"8", :maxlength=>"8", :display=>"inline" %>
+  </div>
+  </div>
+
+  <div class="floating-boxf">
+  <div class="field">
+    <%= f.label :age %>:
+    <%= f.text_field :age, :size=>"8", :maxlength=>"8" %>
+  </div>
+  </div>
+
+  <div class="floating-boxf">
+  <div class="field">
+    <%= f.label :weight %>:
+    <%= f.text_field :weight, :size=>"8", :maxlength=>"8" %>
+  </div>
+  </div>
+
+  <div class="floating-boxf">
+  <div class="field">
+    <%= f.label :bp %>:
+    <%= f.text_field :bp, :size=>"8", :maxlength=>"8" %>
+  </div>
+  </div>
+
+ <div class="floating-boxf">
+  <div class="field">
+    <%= f.label :pulse %>:
+    <%= f.text_field :pulse, :size=>"8", :maxlength=>"8" %>
+  </div>
+  </div>
+
+  <div class="floating-boxf">
+  <div class="field">
+    <%= f.label :temp %>:
+    <%= f.text_field :temp, :size=>"8", :maxlength=>"8" %>
+  </div>
+  </div>
+
+  <div class="floating-boxf">
+  <div class="field">
+    <%= f.label :rr %>:
+    <%= f.text_field :rr, :size=>"8", :maxlength=>"8" %>
+
+  </div>
+  </div>
+
+  <br><br>
+   
+<br><br>
+
+  <hr class="to">
+  <!--<div class="floating-box2">Floating box1</div>-->
+  
+<div class="floating-boxjj">
+  
+<nav class="w3-sidenav w3-light-grey w3-card-2" style="width:170px">
+  <div class="w3-container">
+  <br><br>
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Main</a></li>
+  <li><a href="#contact">Labs</a></li>
+  <li><a href="#about">Documents</a></li>
+  <li><a href="#about">Orders</a></li>
+  <li><a href="#about">Radiolagy</a></li>
+  </ul>
+
+<!--<div class="floating-box">
+      <br><br>
+      <div class="btn-group">
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+      </div>
+
+  </div>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'main')">main</a><br><br>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'labs')">labs</a><br><br>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'documents')">documents</a><br><br>
+    <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'order')">order</a><br><br>
+  <a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'radiolagy')">radiolagy</a>-->
+
+</nav></div>
+
+<div class="floating-boxjk"></div>
+
+  <div class="floating-boxd">
+
+
+<div style="margin-left:130px">
+  
+
+ <div id="main" class="w3-container city" style="display:none">
+<table border="3">
+
+
+   
+</html>
+    </table>
+
+
+
+  </div>
+  <div id="labs" class="w3-container city" style="display:none">
+      
+      
+      <table border="3">
+
+
+   <table>
+<tr>
+<td><h1>labs</h1></td>
+<td>
+
+   <h1>
+Viewer:
+   </h1>
+
+
+<body>
+<textarea rows="10" cols="80">
+</textarea>
+<h1>
+text entry:
+</h1>
+<textarea rows="10" cols="80">
+</textarea>
+
+</body>
+</html>
+    </table>
+
+     
+  </div>
+  <div id="documents" class="w3-container city" style="display:none">
+          
+    
+    
+    <table border="3">
+
+
+   <table>
+<tr>
+<td><h1>documents</h1></td>
+<td>
+
+   <h1>
+Viewer:
+   </h1>
+
+
+<body>
+<textarea rows="10" cols="80">
+</textarea>
+<h1>
+text entry:
+</h1>
+<textarea rows="10" cols="80">
+</textarea>
+
+</body>
+</html>
+
+   </table>
+
+   
+  </div>
+  <div id="order" class="w3-container city" style="display:none">
+
+
+
+
+<table border="3">
+
+
+   <table>
+<tr>
+<td><h1>order</h1></td>
+<td>
+
+   <h1>
+Viewer:
+   </h1>
+
+
+<body>
+<textarea rows="10" cols="80">
+</textarea>
+<h1>
+text entry:
+</h1>
+<textarea rows="10" cols="80">
+</textarea>
+
+</body>
+</html>
+
+   </table>
+
+
+ </div>
+  <div id="radiolagy" class="w3-container city" style="display:none">
+<table border="3">
+
+
+   <table>
+<tr>
+<td><h1>radiolagy</h1></td>
+<td>
+
+   <h1>
+Viewer:
+   </h1>
+
+
+<body>
+<textarea rows="10" cols="80">
+</textarea>
+<h1>
+text entry:
+</h1>
+<textarea rows="10" cols="80">
+</textarea>
+
+</body>
+</html>
+
+   </table>
+  </div>
+
+
+
+</div>
+  
+  <p>Viewr:</p>
+<textarea id="m0" type="text" rows="9" cols="120"></textarea>
+</textarea>
+
+<br>
+  <p>Text Entry:</p>
+  <textarea type="text" onkeypress ="t(this.value)" rows="7" cols="120"></textarea>
+</textarea>
+
+
+
+</body>
+  </div>
+
+
+
+
+  <div class="floating-boxrh">
+    <br><br>
+      <div class="floating-boxtt">
+             <%= f.datetime_select :time %>
+              
+
+      </div>
+
+
+
+      Add Time:
+    
+      <div class="floating-boxrow">
+      <br>
+        :<%= f.label :minutes %><br>
+        :<%= f.label :hours %><br>
+        :<%= f.label :days %><br>
+        :<%= f.label :weeks %><br>
+        <%= f.label :months %><br>
+      </div>
+
+       <div class="floating-boxrow">
+     <br>
+       <%= f.text_field :minutes , :size=>"8", :maxlength=>"8" %>
+       <%= f.text_field :hours, :size=>"8", :maxlength=>"8" %>
+       <%= f.text_field :days, :size=>"8", :maxlength=>"8" %>
+       <%= f.text_field :weeks, :size=>"8", :maxlength=>"8" %>
+       <%= f.text_field :months, :size=>"8", :maxlength=>"8" %>
+     </div>
+    
+      <div class="floating-boxsub">
+
+  <!-- end of the med dev for the slider-->
+  <%= f.submit %>
+</div>
+ 
+ <% end %>
+  </div>
+  
+  </div>
+  </div>
+  </center>
+</form>
