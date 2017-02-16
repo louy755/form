@@ -189,3 +189,79 @@ function openCity(evt, cityName) {
 
 </body>
 </html>
+
+
+
+
+JAVASCRIPTCODE
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+ function t(x) {
+        document.getElementById("m0").innerHTML=x;
+        document.getElementById("m1").innerHTML=x;
+        document.getElementById("m2").innerHTML=x;
+        document.getElementById("m3").innerHTML=x;
+                    }
+
+
+
+
+main code
+
+ <div  style="display:none">
+    <h3>Viewer Lon:</h3>
+   <textarea readonly="true" id="m0" type="text" rows="9" cols="110"></textarea>
+</textarea>
+<br>
+<h3>Text Entry Lon:</h3>
+   <textarea type="text" onkeypress ="t(this.value)" rows="7" cols="110"></textarea>
+</textarea>
+  </div>
+
+ <div  style="display:none">
+     <h3>Viewer Par:</h3>
+   <textarea readonly="true" id="m1" type="text" rows="9" cols="110"></textarea>
+</textarea>
+<br>
+<h3>Text Entry Par:</h3>
+   <textarea type="text" onkeypress ="t(this.value)" rows="7" cols="110"></textarea>
+</textarea>
+  </div>
+
+ <div  style="display:none">
+     <h3>Viewer Tok:</h3>
+   <textarea  readonly="true" id="m2" type="text" rows="9" cols="110"></textarea>
+</textarea>
+<br>
+<h3>Text Entry Tok:</h3>
+   <textarea type="text" onkeypress ="t(this.value)" rows="7" cols="110"></textarea>
+</textarea>
+  </div>
+ <div  style="display:none">
+     <h3>Viewer Tok:</h3>
+   <textarea readonly="true" id="m2" type="text" rows="9" cols="110"></textarea>
+</textarea>
+<br>
+<h3>Text Entry Tok:</h3>
+   <textarea type="text" onkeypress ="t(this.value)" rows="7" cols="110"></textarea>
+</textarea>
+  </div>
+ <div  style="display:none">      <h3>Viewer Tok:</h3>
+   <textarea  readonly="true" id="m2" type="text" rows="9" cols="110"></textarea>
+</textarea>
+<br>
+<h3>Text Entry Tok:</h3>
+   <textarea type="text" onkeypress ="t(this.value)" rows="7" cols="110"></textarea>
+</textarea>
